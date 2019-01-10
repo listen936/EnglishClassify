@@ -1,0 +1,72 @@
+/* miniprogram/pages/test/test.wxss */
+
+.progress-box {
+  padding: 40rpx 30rpx;
+  display: flex;
+  justify-content: center;
+  height: 30rpx;
+}
+
+.progress-box view {
+  min-width: 100rpx;
+}
+
+.progress-box view:first-child {
+  border-radius: 14rpx 0 0 14rpx;
+}
+
+.progress-box view:last-child {
+  border-radius: 0 14rpx 14rpx 0;
+}
+
+.done {
+  background: #fcc975;
+}
+
+.main {
+  text-align: center;
+  margin-top: 100rpx;
+}
+
+.main image {
+  width: 590rpx;
+  height: 442rpx;
+}
+
+.word-box {
+  width: 590rpx;
+  margin: 45rpx auto;
+}
+
+.word {
+  font: 500 48rpx/67rpx 'PingFangSC-Regular';
+}
+
+.btn-box {
+  position: absolute;
+  bottom: 40rpx;
+  left: 50%;
+  margin-left: -60rpx;
+  width: 120rpx;
+  height: 120rpx;
+  background: rgba(243, 159, 89, 1);
+  box-shadow: 0 2rpx 8rpx 0 rgba(243, 159, 89, 1);
+  border-radius: 50%;
+}
+.recording{
+  transform: scale(1.2);
+  transition: all 0.2s initial;
+  background: #36C621;
+  box-shadow: 0 2rpx 8rpx 0 #36C621;
+}
+.mc{
+  width: 38rpx;
+  height: 60rpx;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEwAAAB4CAMAAABvouSiAAAAM1BMVEVHcEz////////////////////////////////////////////////////////////////P0YphAAAAEHRSTlMAPuQXeW7ZxoPxCbObWDEkrnZ7oQAAApZJREFUaN7tmtt2hCAMRQWEEG7y/1/by2oFxwjBsS9d5MlOmV1IIIaTLkvHlA5gEA0ErZa3zGnIlYF291lR5heT8SZqg0wYbHdYQmbSpLixxHxpw0sVuWGDc9uwBZNjfoPcNHjIYcNuc7IHk/zdq3PX9FMeG/KaygxTz62Sv87AgYXnXMZ3muHADBOGHBgyYZllEzZhEzZhEzZhfwiLXoJV78CUBeljKQZkug9L8rdgiOfX/SDMwV43w7mEHoSJUsvguUYahO0VmC/ftHdhthRGEzZhEzZh/xg2eBGrYHi+jQ5eEUNJ2/IMG7y8VjBTHn/Nc2DEcF8ezd0LvyleL7f7XUTZOLBdW3L7R2s1DTESAUOIY7F6Xvffr30YNThVsyzxcd2dho6Ivat/UPwQaELrgXoDV1N3Ha8ZR6zSHhxY6R6puVBMlKLyHUBJ6XWRqeuVcfJ4UA+SjOYJVOYlUWz0sHixUoz0n9xezyLWdXIilce6+F0Uns6qoI7vV0zX0+RwrZVL5wkhGK40NmUPs5NWXal2ZcenhvyXLJjPCaIBmxpyYqKFQUq4dq4jfwfakRmZMriov6Ou9GdkCZ2xoU77QaUz0CmcOtq+I+kqf3HsyQ5Ae6n6OHZrO/Rr41yq9PGYn+iAvaYdQ3WtlDbX6WhpHkavD0OT9s2jevQbcbQRvLVaW+sBx7opyuQhM82ouzDCCr3mR0QuChldGcWcXOD1KgSnh8LviolOVeXHGmybvew9SXujKykssVywNzqSP8EQOuzRxaDFm23h8raB5X2bsAn7E5gTeq1sT76m/lQLVldYSF4+4/zbQOJn7fRMp5TpRDfyQum5TY3AuglJ8lmy6zPLh9n+LmNHADg7bQXGexhhPX/zA+c4IeyQEbePAAAAAElFTkSuQmCC) no-repeat center;
+  background-size: 100%;
+  z-index: 100;
+}

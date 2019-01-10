@@ -1,0 +1,10 @@
+<!--miniprogram/pages/start/start.wxml-->
+<view class='main'>
+    <image src='../../img/start.png'></image>
+    <text>你的发音是英式还是美式？</text>
+    
+</view>
+<view class='btn-box'>
+  <button open-type='getUserInfo' bindgetuserinfo="getInfo">开始测试</button>
+  <view class='btn-bg'></view>
+</view>

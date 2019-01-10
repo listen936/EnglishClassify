@@ -1,0 +1,39 @@
+/* miniprogram/pages/start/start.wxss */
+page{
+  width: 100%;
+  height: 100%;
+}
+.main{
+  text-align: center;
+}
+image{
+  width: 670rpx;
+  height: 400rpx;
+  margin: 60rpx 40rpx;
+}
+.btn-box{
+  position: absolute;
+  bottom: 40rpx;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 90rpx;
+  text-align: center;
+}
+.btn-box button ,.btn-box view{
+  width: 500rpx;
+  height: 80rpx;
+  border-radius: 40rpx;
+  background: #F39F59;
+  font:400 28rpx/80rpx 'PingFangSC-Regular';
+  color:#fff;
+
+
+}
+.btn-box view{
+  background: #DD8740;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: -1;
+}

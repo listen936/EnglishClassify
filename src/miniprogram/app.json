@@ -1,0 +1,20 @@
+{
+  "pages": [
+    "pages/start/start",
+    "pages/index/index",
+    "pages/userConsole/userConsole",
+    "pages/storageConsole/storageConsole",
+    "pages/databaseGuide/databaseGuide",
+    "pages/addFunction/addFunction",
+    "pages/deployFunctions/deployFunctions",
+    "pages/chooseLib/chooseLib",
+    "pages/test/test"
+  ],
+  "window": {
+    "backgroundColor": "#FFF",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#F39F59",
+    "navigationBarTitleText": "英美音倾向测试",
+    "navigationBarTextStyle": "white"
+  }
+}

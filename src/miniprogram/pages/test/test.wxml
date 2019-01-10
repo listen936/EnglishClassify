@@ -1,0 +1,20 @@
+<!--miniprogram/pages/test/test.wxml-->
+<view wx:if="{{over}}">
+  <view class='progress-box'>
+    <view wx:for="{{progress}}" wx:key="{{index}}" class="{{item ? 'done':''}}"></view>
+  </view>
+  <view class='main'>
+    <image src="{{word.img}}"></image>
+    <view class='word-box'>
+      <text class='word'>{{word.text}}</text>
+    </view>
+  </view>
+
+  <view class="btn-box {{recording ? 'recording':''}}" bindtouchstart='start' bindtouchend='stop'>
+    <view class='mc'>
+    </view>
+  </view>
+</view>
+<view wx:else>
+<text>666</text>
+</view>
