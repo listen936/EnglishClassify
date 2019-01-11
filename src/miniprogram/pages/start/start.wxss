@@ -26,8 +26,10 @@ image{
   background: #F39F59;
   font:400 28rpx/80rpx 'PingFangSC-Regular';
   color:#fff;
-
-
+  border: 0;
+}
+button::after{
+  border: 0;
 }
 .btn-box view{
   background: #DD8740;

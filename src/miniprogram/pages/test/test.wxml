@@ -15,6 +15,27 @@
     </view>
   </view>
 </view>
-<view wx:else>
-<text>666</text>
+<view wx:else class='result-box'>
+  <image src='../../img/result.png'></image>
+  <view class='result'>
+    <view>
+      <view>英式</view>
+      <view class='score'>{{gb}}</view>
+    </view>
+    <view>
+      <view>美式</view>
+      <view class='score'>{{us}}</view>
+    </view>
+  </view>
+  <button bindtap='poster'>
+    生成海报
+  </button>
+  <navigator url='../start/start' open-type='redirect'>
+    <button>
+      重新测试
+    </button>
+  </navigator>
+</view>
+<view class='canvas-box'>
+  <canvas canvas-id='poster' class='poster'></canvas>
 </view>

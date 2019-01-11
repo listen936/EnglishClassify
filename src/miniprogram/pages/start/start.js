@@ -24,7 +24,13 @@ Page({
   /**
    * 用户点击右上角分享
    */
-  onShareAppMessage: function () {
-
+  onShareAppMessage: function (e) {
+    if (e.from == 'menu') {
+      return {
+        title: '快来测试一下你的发音是英式还是美式吧',
+        path: 'pages/start/start',
+        imageUrl: '../../img/start.png'
+      }
+    }
   }
 })

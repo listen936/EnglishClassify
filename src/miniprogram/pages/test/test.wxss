@@ -9,6 +9,7 @@
 
 .progress-box view {
   min-width: 100rpx;
+  border: 1rpx solid #fff;
 }
 
 .progress-box view:first-child {
@@ -69,4 +70,56 @@
   background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEwAAAB4CAMAAABvouSiAAAAM1BMVEVHcEz////////////////////////////////////////////////////////////////P0YphAAAAEHRSTlMAPuQXeW7ZxoPxCbObWDEkrnZ7oQAAApZJREFUaN7tmtt2hCAMRQWEEG7y/1/by2oFxwjBsS9d5MlOmV1IIIaTLkvHlA5gEA0ErZa3zGnIlYF291lR5heT8SZqg0wYbHdYQmbSpLixxHxpw0sVuWGDc9uwBZNjfoPcNHjIYcNuc7IHk/zdq3PX9FMeG/KaygxTz62Sv87AgYXnXMZ3muHADBOGHBgyYZllEzZhEzZhEzZhfwiLXoJV78CUBeljKQZkug9L8rdgiOfX/SDMwV43w7mEHoSJUsvguUYahO0VmC/ftHdhthRGEzZhEzZh/xg2eBGrYHi+jQ5eEUNJ2/IMG7y8VjBTHn/Nc2DEcF8ezd0LvyleL7f7XUTZOLBdW3L7R2s1DTESAUOIY7F6Xvffr30YNThVsyzxcd2dho6Ivat/UPwQaELrgXoDV1N3Ha8ZR6zSHhxY6R6puVBMlKLyHUBJ6XWRqeuVcfJ4UA+SjOYJVOYlUWz0sHixUoz0n9xezyLWdXIilce6+F0Uns6qoI7vV0zX0+RwrZVL5wkhGK40NmUPs5NWXal2ZcenhvyXLJjPCaIBmxpyYqKFQUq4dq4jfwfakRmZMriov6Ou9GdkCZ2xoU77QaUz0CmcOtq+I+kqf3HsyQ5Ae6n6OHZrO/Rr41yq9PGYn+iAvaYdQ3WtlDbX6WhpHkavD0OT9s2jevQbcbQRvLVaW+sBx7opyuQhM82ouzDCCr3mR0QuChldGcWcXOD1KgSnh8LviolOVeXHGmybvew9SXujKykssVywNzqSP8EQOuzRxaDFm23h8raB5X2bsAn7E5gTeq1sT76m/lQLVldYSF4+4/zbQOJn7fRMp5TpRDfyQum5TY3AuglJ8lmy6zPLh9n+LmNHADg7bQXGexhhPX/zA+c4IeyQEbePAAAAAElFTkSuQmCC) no-repeat center;
   background-size: 100%;
   z-index: 100;
+}
+.result-box{
+  text-align: center;
+  margin-top: 120rpx;
+}
+.result-box image{
+    width: 600rpx;
+    height: 293rpx;
+}
+.result{
+  width: 600rpx;
+  margin: 50rpx auto;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 300rpx;
+}
+.result>view{
+  width: 50%;
+  text-align: center;
+  font:400 34rpx/48rpx 'PingFangSC-Regular';
+}
+.score{
+  font:600 56rpx/78rpx 'PingFangSC-Regular';
+  color:#895D5D;
+}
+.result-box button{
+  margin-top: 50rpx;
+   width: 500rpx;
+    height: 80rpx;
+    border-radius: 40rpx;
+    background: #F39F59;
+    font:400 28rpx/80rpx 'PingFangSC-Regular';
+    color:#fff;
+    border: 0;
+}
+.result-box button::after{
+  border: 0;
+}
+.canvas-box{
+   position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 750rpx;
+   /* left: 0; */
+  /* background: red; */
+  /* z-index: 1000  */
+}
+.poster{
+  width: 750rpx;
+  height: 100%;
+  
 }
