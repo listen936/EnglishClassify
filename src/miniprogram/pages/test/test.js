@@ -45,7 +45,9 @@ Page({
     us: 0, //美式总得分
     n: 0,
     START: 0, //录音开始时间戳
-    over: true
+    over: true,
+    canvasImg:'',
+    shadow:true
 
   },
 
@@ -216,29 +218,40 @@ Page({
 
     ctx.drawImage('../../img/oven.png', 270 * rpx, 950 * rpx, 200 * rpx, 200 * rpx);
     ctx.draw(false,()=>{
-      that.savePicture();
+      that.saveCanvasImg();
     });
   },
   // 保存图片
-  savePicture(){
+  saveCanvasImg(){
+    let _this = this;
     wx.canvasToTempFilePath({
       canvasId: 'poster',
       fileType: 'jpg',
       success: function (data) {
         wx.hideLoading();
-        wx.saveImageToPhotosAlbum({
-          filePath: data.tempFilePath,
-          success: function (res) {
-            wx.showToast({
-              title: '已保存到相册',
-              icon:'success'
-            });
-            
-          }, fail() {
-            
-          }
+        _this.setData({
+          canvasImg: data.tempFilePath,
+          shadow:false
         })
       }
+    })
+  },
+  savaToAblum(){
+    let  _this = this;
+    wx.saveImageToPhotosAlbum({
+      filePath:this.data.canvasImg,
+      success: function (res) {
+        wx.showToast({
+          title: '已保存到相册',
+          icon: 'success'
+        });
+        _this.close();
+      }
+    })
+  },
+  close(){
+    this.setData({
+      shadow:true
     })
   },
   /**

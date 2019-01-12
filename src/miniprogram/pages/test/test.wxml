@@ -38,4 +38,10 @@
 </view>
 <view class='canvas-box'>
   <canvas canvas-id='poster' class='poster'></canvas>
+</view> 
+<view class='shadow' hidden="{{shadow}}" bindtap='close'>
+  <view class='view-box'>
+    <image src="{{canvasImg}}"></image>
+    <button bindtap='savaToAblum'>保存到相册</button>
+  </view>
 </view>
